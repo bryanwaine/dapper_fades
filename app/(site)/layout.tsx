@@ -23,7 +23,7 @@ export default async function RootLayout({
       backgroundImage: `url(/bg-clipper.png)`, 
     }}>
         <nav className="flex justify-center items-center w-full h-48 max-w-auto mx-auto bg-transparent drop-shadow-md p-5">
-          <div className="hidden sm:flex justify-around items-center bg-orange-500  sm:w-1/4 lg:w-1/6 h-12 shadow-md">
+          <div className="hidden sm:flex justify-around items-center bg-orange-500  sm:w-1/4 lg:w-1/6 h-12 shadow-lg">
             <Link href={"/"} className="font-bold text-xl hover:text-white active:text-white">
               Home
             </Link>
@@ -31,16 +31,33 @@ export default async function RootLayout({
               Services
             </Link>
           </div>
-          <Link href={"/"}>
+
+          <div className="w-full flex flex-col items-center">
+            <Link href={"/"}>
             <Image
               src={logo}
               alt="Dapper Fades"
               width={150}
               height={50}
-              className="object-contain"
+              className="object-contain mt-10 mb-5 sm:m-0"
             />
-          </Link>
-          <div className="hidden sm:flex justify-around items-center bg-orange-500  sm:w-1/4 lg:w-1/6 h-12 shadow-md">
+            </Link>
+            <div className="flex sm:hidden justify-around items-center bg-stone-300 w-full shadow-lg py-2">
+
+              
+            <Link href={"/"} className="font-bold text-xl hover:text-orange-600 active:text-white">
+              Services
+            </Link>
+            <Link href={"#"} className="font-bold text-xl hover:text-orange-600 active:text-white">
+              About
+            </Link>
+            <Link href={"#"} className="font-bold text-xl hover:text-white active:text-orange-600">
+              Contact
+            </Link>
+          </div>
+          </div>
+          
+          <div className="hidden sm:flex justify-around items-center bg-orange-500  sm:w-1/4 lg:w-1/6 h-12 shadow-lg">
             {pages.map((page) => (
               <Link key={page._id} href={`/${page.slug}`} className="font-bold text-xl hover:text-white active:text-white">
                 {page.title}
