@@ -27,7 +27,7 @@ export default async function RootLayout({
             <Link href={"/"} className="font-bold text-xl hover:text-white active:text-white">
               Home
             </Link>
-            <Link href={"#"} className="font-bold text-xl hover:text-white active:text-white">
+            <Link href={"#services"} className="font-bold text-xl hover:text-white active:text-white">
               Services
             </Link>
           </div>
@@ -45,7 +45,7 @@ export default async function RootLayout({
 
             {/* Mobile Navbar */}
             <div className="flex sm:hidden justify-around items-center bg-orange-500 w-full shadow-lg py-2">   
-            <Link href={"/"} className="font-bold text-xl hover:text-white-600 active:text-white-600">
+            <Link href={"#services"} className="font-bold text-xl hover:text-white-600 active:text-white-600">
               Services
               </Link>
               {pages.map((page) => (

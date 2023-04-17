@@ -7,8 +7,16 @@ export default async function Home() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <h2 >
-        <span className="text-3xl font-bold bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent " id="#">Services</span>
+      <div className=" w-full h-full bg-cover">
+        <video src="./video-bg.mp4" autoPlay loop muted />
+      </div>
+      <h2 className="mt-10" id="#services">
+        <span
+          className=" text-3xl font-bold bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent "
+          
+        >
+          Services
+        </span>
       </h2>
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
