@@ -23,7 +23,7 @@ export default async function RootLayout({
       backgroundImage: `url(/bg-clipper.png)`, 
     }}>
         <nav className="flex justify-center items-center w-full h-48 max-w-auto mx-auto bg-transparent drop-shadow-md p-5">
-          <div className="flex justify-around items-center bg-orange-500 w-1/6 h-12 shadow-md">
+          <div className="hidden sm:flex justify-around items-center bg-orange-500  sm:w-1/4 lg:w-1/6 h-12 shadow-md">
             <Link href={"/"} className="font-bold text-xl hover:text-white active:text-white">
               Home
             </Link>
@@ -40,7 +40,7 @@ export default async function RootLayout({
               className="object-contain"
             />
           </Link>
-          <div className="flex justify-around items-center bg-orange-500 w-1/6 h-12 shadow-md">
+          <div className="hidden sm:flex justify-around items-center bg-orange-500  sm:w-1/4 lg:w-1/6 h-12 shadow-md">
             {pages.map((page) => (
               <Link key={page._id} href={`/${page.slug}`} className="font-bold text-xl hover:text-white active:text-white">
                 {page.title}
