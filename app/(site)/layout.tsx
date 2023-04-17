@@ -43,6 +43,7 @@ export default async function RootLayout({
             />
             </Link>
 
+            {/* Mobile Navbar */}
             <div className="flex sm:hidden justify-around items-center bg-orange-500 w-full shadow-lg py-2">   
             <Link href={"/"} className="font-bold text-xl hover:text-white-600 active:text-white-600">
               Services
