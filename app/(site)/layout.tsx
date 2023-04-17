@@ -32,7 +32,7 @@ export default async function RootLayout({
             </Link>
           </div>
 
-          <div className="w-full flex flex-col items-center">
+          <div className="w-full sm:w-auto flex flex-col items-center">
             <Link href={"/"}>
             <Image
               src={logo}
@@ -42,18 +42,16 @@ export default async function RootLayout({
               className="object-contain mt-10 mb-5 sm:m-0"
             />
             </Link>
-            <div className="flex sm:hidden justify-around items-center bg-stone-300 w-full shadow-lg py-2">
 
-              
-            <Link href={"/"} className="font-bold text-xl hover:text-orange-600 active:text-white">
+            <div className="flex sm:hidden justify-around items-center bg-orange-500 w-full shadow-lg py-2">   
+            <Link href={"/"} className="font-bold text-xl hover:text-white-600 active:text-white-600">
               Services
-            </Link>
-            <Link href={"#"} className="font-bold text-xl hover:text-orange-600 active:text-white">
-              About
-            </Link>
-            <Link href={"#"} className="font-bold text-xl hover:text-white active:text-orange-600">
-              Contact
-            </Link>
+              </Link>
+              {pages.map((page) => (
+              <Link key={page._id} href={`/${page.slug}`} className="font-bold text-xl hover:text-white-600 active:text-white-600">
+                {page.title}
+              </Link>
+            ))}
           </div>
           </div>
           
