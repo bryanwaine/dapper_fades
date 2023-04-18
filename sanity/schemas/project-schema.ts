@@ -32,9 +32,9 @@ const project = {
       ],
     },
     {
-      name: "url",
-      title: "URL",
-      type: "url",
+      name: "price",
+      title: "Price",
+      type: "number",
     },
     {
       name: "content",

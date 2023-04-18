@@ -21,15 +21,7 @@ export default async function RootLayout({
       <body className="bg-cover bg-fixed bg-center bg-no-repeat" style={{ 
       backgroundImage: `url(/bg-clipper.png)`, 
       }}>
-         <nav className="absolute flex justify-center items-center w-full h-48 max-w-auto mx-auto bg-transparent drop-shadow-md p-5">
-          <div className="hidden sm:flex justify-around items-center bg-orange-500  sm:w-1/4 lg:w-1/6 h-12 shadow-lg">
-            <Link href={"/"} className="font-bold text-xl hover:text-white active:text-white">
-              Home
-            </Link>
-            <Link href={"#"} className="font-bold text-xl hover:text-white active:text-white">
-              Services
-            </Link>
-          </div>
+         <nav className="absolute flex flex-col justify-center items-center w-full h-48 max-w-auto mx-auto bg-transparent drop-shadow-md p-5">
 
           <div className="w-full sm:w-auto flex flex-col items-center">
             <Link href={"/"}>
@@ -44,9 +36,7 @@ export default async function RootLayout({
 
             {/* Mobile Navbar */}
             <div className="flex sm:hidden justify-around items-center bg-orange-500 w-full shadow-lg py-2">   
-            <Link href={"#"} className="font-bold text-xl hover:text-white-600 active:text-white-600">
-              Services
-              </Link>
+            
               {pages.map((page) => (
               <Link key={page._id} href={`/${page.slug}`} className="font-bold text-xl hover:text-white-600 active:text-white-600">
                 {page.title}
@@ -55,9 +45,9 @@ export default async function RootLayout({
           </div>
           </div>
           
-          <div className="hidden sm:flex justify-around items-center bg-orange-500  sm:w-1/4 lg:w-1/6 h-12 shadow-lg">
+          <div className="hidden sm:flex justify-around items-center bg-orange-500  sm:w-1/4 h-12 shadow-lg mt-5 ">
             {pages.map((page) => (
-              <Link key={page._id} href={`/${page.slug}`} className="font-bold text-xl hover:text-white active:text-white">
+              <Link key={page._id} href={`/${page.slug}`} className="font-bold text-xl hover:text-white active:text-white m-5">
                 {page.title}
               </Link>
             ))}
