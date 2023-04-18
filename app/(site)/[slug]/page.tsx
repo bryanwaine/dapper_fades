@@ -14,7 +14,7 @@ export default async function Page({ params }: Props) {
   const projects = await getProjects();
 
   return (
-    <div className="max-w-5xl mx-auto px-10">
+    <div className="max-w-5xl mx-auto px-10 pb-10">
       <div className="h-64"></div>
       
       <h1 className="font-bold text-gray-700 text-3xl">
@@ -31,7 +31,7 @@ export default async function Page({ params }: Props) {
            <Link
              href={`/projects/${project.slug}`}
              key={project._id}
-             className="flex flex-col items-center border border-none bg-white rounded-lg p-3 shadow-[0px_0px_20px_10px_#cbd5e0] hover:scale-105 hover:border-blue-500 transition"
+             className="flex flex-col items-center border border-none bg-white bg-opacity-50 rounded-lg p-3 shadow-[0px_0px_20px_10px_#cbd5e0] hover:scale-105 hover:border-blue-500 transition"
            >
              {project.image && (
                <Image

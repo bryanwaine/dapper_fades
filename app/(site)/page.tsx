@@ -1,6 +1,7 @@
 import { getProjects } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
+import icon from "../../public/icon.png";
 
 export default async function Home() {
   const projects = await getProjects();
@@ -19,20 +20,29 @@ export default async function Home() {
             Services
           </span>
         </h2>
-        
 
         <div
-          className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 rounded-md"
+          className="mt-10 flex flex-col justify-center items-center bg-stone-300 p-10 border-2 border-white rounded-3xl bg-opacity-50"
           id="#services"
         >
+          <Image
+            src={icon}
+            alt="icon"
+            width={50}
+            height={50}
+            className="object-cover"
+          />
           {projects.map((project) => (
             <Link
               href={`/projects/${project.slug}`}
               key={project._id}
-              className="flex flex-col items-center border border-none bg-white rounded-lg p-3 shadow-[0px_0px_20px_10px_#cbd5e0] hover:scale-105 hover:border-blue-500 transition"
+              className="w-full flex flex-col items-center border border-none  transition"
             >
-              <div className="font-extrabold py-3 bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent">
-                {project.name}
+              <div className=" w-full flex justify-between items-center">
+                <div className="font-extrabold py-3 bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent">
+                  {project.name}
+                </div>
+                <div className="font-extrabold py-3">&pound;{project.price}</div>
               </div>
             </Link>
           ))}

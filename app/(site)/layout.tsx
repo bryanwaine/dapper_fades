@@ -32,13 +32,13 @@ export default async function RootLayout({
               height={50}
               className="object-contain m-5 sm:m-0"
             />
-            </Link>
+            </Link> 
 
             {/* Mobile Navbar */}
-            <div className="flex sm:hidden justify-around items-center bg-orange-500 w-full shadow-lg py-2">   
+            <div className="relative flex bg-opacity-70 sm:hidden justify-around items-center bg-orange-400 w-full shadow-lg py-2">   
             
               {pages.map((page) => (
-              <Link key={page._id} href={`/${page.slug}`} className="font-bold text-xl hover:text-white-600 active:text-white-600">
+              <Link key={page._id} href={`/${page.slug}`} className="font-bold text-l text-white hover:text-white-600 active:text-white-600">
                 {page.title}
               </Link>
             ))}
