@@ -1,16 +1,14 @@
-import { getPages, getProjects } from "@/sanity/sanity-utils";
+import { getProjects } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/Dapper_Fades.png";
 
 export default async function Home() {
   const projects = await getProjects();
-  const pages = await getPages();
 
   return (
     <div className="max-w-5xl mx-auto">
       <div className="w-full h-full bg-cover">
-        <video loop autoPlay playsInline disablePictureInPicture preload="auto">
+        <video loop autoPlay playsInline disablePictureInPicture>
           <source src="./video-bg.mp4" type="video/mp4" />
         </video>
       </div>
