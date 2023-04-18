@@ -9,7 +9,7 @@ export default async function Home() {
     <div className="max-w-5xl mx-auto">
       <div className=" w-full h-full bg-cover">
         {/* <video src="./video-bg.mp4" autoPlay loop muted /> */}
-        <video loop autoPlay>
+        <video loop autoPlay playsInline disablePictureInPicture preload="auto">
           <source src="./video-bg.mp4" type="video/mp4" />
         </video>
       </div>
