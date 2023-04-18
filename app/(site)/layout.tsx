@@ -38,16 +38,16 @@ export default async function RootLayout({
             <div className="relative flex bg-opacity-70 sm:hidden justify-around items-center bg-orange-400 w-full shadow-lg py-2">   
             
               {pages.map((page) => (
-              <Link key={page._id} href={`/${page.slug}`} className="font-bold text-l text-white hover:text-white-600 active:text-white-600">
+              <Link key={page._id} href={`/${page.slug}`} className="font-bold text-l text-white hover:text-black-600 ">
                 {page.title}
               </Link>
             ))}
           </div>
           </div>
           
-          <div className="hidden sm:flex justify-around items-center bg-orange-500  sm:w-1/4 h-12 shadow-lg mt-5 ">
+          <div className="hidden sm:flex justify-around items-center bg-orange-500 bg-opacity-70 sm:w-1/2 lg:w-1/4 h-12 shadow-lg mt-5 ">
             {pages.map((page) => (
-              <Link key={page._id} href={`/${page.slug}`} className="font-bold text-xl hover:text-white active:text-white m-5">
+              <Link key={page._id} href={`/${page.slug}`} className="font-bold text-xl text-white hover:text-black m-5">
                 {page.title}
               </Link>
             ))}

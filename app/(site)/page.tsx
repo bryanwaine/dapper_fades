@@ -14,7 +14,7 @@ export default async function Home() {
         </video>
       </div>
 
-      <div className=" p-10">
+      <div className=" p-10 flex flex-col items-center w-full">
         <h2 className="mt-10">
           <span className=" text-3xl font-bold bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent ">
             Services
@@ -22,7 +22,7 @@ export default async function Home() {
         </h2>
 
         <div
-          className="mt-10 flex flex-col justify-center items-center bg-stone-300 p-10 border-2 border-white rounded-3xl bg-opacity-50"
+          className="w-full sm:w-1/2 lg:w-1/3 mt-10 flex flex-col justify-center items-center bg-stone-300 p-10 border-2 border-white rounded-3xl bg-opacity-50"
           id="#services"
         >
           <Image
