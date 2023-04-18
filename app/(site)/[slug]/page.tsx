@@ -17,7 +17,7 @@ export default async function Page({ params }: Props) {
     <div className="max-w-5xl mx-auto px-10 pb-10">
       <div className="h-64"></div>
       
-      <h1 className="font-bold text-gray-700 text-3xl">
+      <h1 className="w-full flex justify-center items-center font-bold text-gray-700 text-3xl">
         <span className="bg-gradient-to-r from-gray-800 via-stone-600 to-orange-600 bg-clip-text text-transparent">
           {page.title}
         </span>
