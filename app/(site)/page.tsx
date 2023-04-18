@@ -8,9 +8,12 @@ export default async function Home() {
   return (
     <div className="max-w-5xl mx-auto">
       <div className=" w-full h-full bg-cover">
-        <video src="./video-bg.mp4" autoPlay loop muted />
+        {/* <video src="./video-bg.mp4" autoPlay loop muted /> */}
+        <video loop autoPlay>
+          <source src="./video-bg.mp4" type="video/mp4" />
+        </video>
       </div>
-      <h2 className="mt-10" id="#services">
+      <h2 className="mt-10">
         <span
           className=" text-3xl font-bold bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent "
           
@@ -19,7 +22,7 @@ export default async function Home() {
         </span>
       </h2>
 
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"  id="#services">
         {projects.map((project) => (
           <Link
             href={`/projects/${project.slug}`}
