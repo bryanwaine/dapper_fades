@@ -21,18 +21,21 @@ export default async function RootLayout({
     <html lang="en">
       <body className="bg-cover bg-fixed bg-center bg-no-repeat" style={{ 
       backgroundImage: `url(/bg-clipper.png)`, 
-    }}>
-        <nav className="flex justify-center items-center w-full h-48 max-w-auto mx-auto bg-transparent drop-shadow-md p-5">
-          <div className="hidden sm:flex justify-around items-center bg-orange-500  sm:w-1/4 lg:w-1/6 h-12 shadow-lg">
-            <Link href={"/"} className="font-bold text-xl hover:text-white active:text-white">
-              Home
-            </Link>
-            <Link href={"#services"} className="font-bold text-xl hover:text-white active:text-white">
-              Services
-            </Link>
-          </div>
+      }}>
+         <div className="w-full h-full bg-cover">
+          {/* <video src="./video-bg.mp4" autoPlay loop muted /> */}
+          <video
+            loop
+            autoPlay
+            playsInline
+            disablePictureInPicture
+            preload="auto"
+          >
+            <source src="./video-bg.mp4" type="video/mp4" />
+          </video>
+        </div>
 
-          <div className="w-full sm:w-auto flex flex-col items-center">
+        <div className="absolute top-0 w-full sm:w-auto flex flex-col items-center">
             <Link href={"/"}>
             <Image
               src={logo}
@@ -45,7 +48,7 @@ export default async function RootLayout({
 
             {/* Mobile Navbar */}
             <div className="flex sm:hidden justify-around items-center bg-orange-500 w-full shadow-lg py-2">   
-            <Link href={"#services"} className="font-bold text-xl hover:text-white-600 active:text-white-600">
+            <Link href={"#"} className="font-bold text-xl hover:text-white-600 active:text-white-600">
               Services
               </Link>
               {pages.map((page) => (
@@ -55,6 +58,18 @@ export default async function RootLayout({
             ))}
           </div>
           </div>
+
+        <nav className="flex justify-center items-center w-full h-48 max-w-auto mx-auto bg-transparent drop-shadow-md p-5">
+          <div className="hidden sm:flex justify-around items-center bg-orange-500  sm:w-1/4 lg:w-1/6 h-12 shadow-lg">
+            <Link href={"/"} className="font-bold text-xl hover:text-white active:text-white">
+              Home
+            </Link>
+            <Link href={"#"} className="font-bold text-xl hover:text-white active:text-white">
+              Services
+            </Link>
+          </div>
+
+         
           
           <div className="hidden sm:flex justify-around items-center bg-orange-500  sm:w-1/4 lg:w-1/6 h-12 shadow-lg">
             {pages.map((page) => (
@@ -64,8 +79,13 @@ export default async function RootLayout({
             ))}
           </div>
         </nav>
+
+
+       
         <main className="m-10">{children}</main>
       </body>
     </html>
   );
 }
+
+

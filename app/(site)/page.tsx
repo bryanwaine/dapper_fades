@@ -7,12 +7,7 @@ export default async function Home() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      <div className="relative top-0 right-0  w-full h-full bg-cover">
-        {/* <video src="./video-bg.mp4" autoPlay loop muted /> */}
-        <video loop autoPlay playsInline disablePictureInPicture preload="auto">
-          <source src="./video-bg.mp4" type="video/mp4" />
-        </video>
-      </div>
+      
       <h2 className="mt-10">
         <span
           className=" text-3xl font-bold bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent "
