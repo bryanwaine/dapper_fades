@@ -42,7 +42,7 @@ export default async function Page({ params }: Props) {
                  className="object-cover rounded-lg border border-gray-500"
                />
              )}
-             <div className="font-extrabold py-3 bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent">
+             <div className="font-extrabold py-3 border-none  bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent">
                {project.name}
              </div>
            </Link>
