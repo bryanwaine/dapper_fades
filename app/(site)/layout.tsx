@@ -39,7 +39,7 @@ export default async function RootLayout({
               alt="Dapper Fades"
               width={150}
               height={50}
-              className="object-contain mt-10 mb-5 sm:m-0"
+              className="object-contain m-5 sm:m-0"
             />
             </Link>
 
