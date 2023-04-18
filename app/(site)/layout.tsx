@@ -35,7 +35,7 @@ export default async function RootLayout({
             </Link> 
 
             {/* Mobile Navbar */}
-            <div className="relative flex bg-opacity-90 sm:hidden justify-around items-center bg-orange-400 w-full shadow-lg py-2">   
+            <div className="relative flex bg-opacity-90 sm:hidden justify-around items-center bg-orange-400 w-full shadow-lg py-2 rounded-lg">   
             
               {pages.map((page) => (
               <Link key={page._id} href={`/${page.slug}`} className="font-bold text-l text-white hover:text-black-600 ">
@@ -45,7 +45,7 @@ export default async function RootLayout({
           </div>
           </div>
           
-          <div className="hidden sm:flex justify-around items-center bg-orange-500 bg-opacity-90 sm:w-1/2 lg:w-1/4 h-12 shadow-lg mt-5 ">
+          <div className="hidden sm:flex justify-around items-center bg-orange-500 bg-opacity-90 sm:w-1/2 lg:w-1/4 h-12 shadow-lg mt-5 rounded-lg">
             {pages.map((page) => (
               <Link key={page._id} href={`/${page.slug}`} className="font-bold text-xl text-white hover:text-black m-5">
                 {page.title}
