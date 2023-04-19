@@ -31,7 +31,7 @@ export default async function Page({ params }: Props) {
            <Link
              href={`/projects/${project.slug}`}
              key={project._id}
-             className="flex flex-col items-center border border-none bg-white bg-opacity-50 rounded-lg p-3 shadow-[0px_0px_20px_10px_#cbd5e0] hover:scale-105 hover:border-blue-500 transition"
+             className="relative flex flex-col items-center justify-start px-3 pt-3 pb-10 hover:scale-105 hover:border-blue-500 transition"
            >
              {project.image && (
                <Image
@@ -39,12 +39,15 @@ export default async function Page({ params }: Props) {
                  alt={project.alt}
                  width={350}
                  height={50}
-                 className="object-cover rounded-lg border border-gray-500"
+                 className="object-cover rounded-2xl shadow-[0px_0px_20px_10px_#cbd5e0]"
                />
              )}
-             <div className="font-extrabold py-3 border-none  bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent">
+             <div className="absolute bottom-0 flex justify-center items-center borderborder-black rounded-2xl bg-white bg-opacity-70 backdrop-blur-sm w-36 h-24 px-2">
+               <div className="flex justify-center items-center text-center font-extrabold py-3 border-none bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent hover:border-none">
                {project.name}
              </div>
+             </div>
+             
            </Link>
          ))}
        </div>
