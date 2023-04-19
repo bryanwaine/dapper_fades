@@ -84,7 +84,10 @@ export default async function Page({ params }: Props) {
       <div className="mt-10 grid grid-cols-1 gap-5">
         {page.slug === "contact" && (
           <div>
-            <div className="w-full flex flex-col justify-center items-center mb-10">
+            <div className="w-full flex flex-col justify-center items-center text-center">
+              <PortableText value={page.content} />
+            </div>
+            <div className="w-full flex flex-col justify-center items-center mt-10">
               <div className="flex justify-center items-center bg-orange-600 rounded-full h-12 w-12 mb-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +103,7 @@ export default async function Page({ params }: Props) {
                 waine.bryan@gmail.com
               </a>
             </div>
-            <div className="w-full flex flex-col justify-center items-center mb-10">
+            <div className="w-full flex flex-col justify-center items-center mt-10">
               <div className="flex justify-center items-center bg-orange-600 rounded-full h-12 w-12 mb-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +119,9 @@ export default async function Page({ params }: Props) {
                   />
                 </svg>
               </div>
-              <a href="sms:+447879144739?&body=Hi%2520there%252C%2520I%2527d%2520like%2520to%2520book%2520a%2520haircut%2520appointment...">+447879144739</a>
+              <a href="sms:+447879144739?&body=Hi%2520there%252C%2520I%2527d%2520like%2520to%2520book%2520a%2520haircut%2520appointment...">
+                +447879144739
+              </a>
             </div>
           </div>
         )}
