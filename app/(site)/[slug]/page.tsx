@@ -74,17 +74,17 @@ export default async function Page({ params }: Props) {
               <div className="flex justify-center items-center text-center font-extrabold py-3 border-none bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent hover:border-none">
                 <PortableText value={page.content} />
               </div>
-              <p>Barber</p>
+              <p className="font-bold">Barber</p>
             </div>
           </div>
         </div>
       )}
 
-      {/* OTHER PAGES */}
+      {/* CONTACT PAGE */}
       <div className="mt-10 grid grid-cols-1 gap-5">
         {page.slug === "contact" && (
           <div>
-            <div className="w-full flex flex-col justify-center items-center text-center">
+            <div className="w-full flex flex-col justify-center items-center text-center font-bold">
               <PortableText value={page.content} />
             </div>
             <div className="w-full flex flex-col justify-center items-center mt-10">
@@ -99,7 +99,7 @@ export default async function Page({ params }: Props) {
                   <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                 </svg>
               </div>
-              <a href="mailto:waine.bryan@gmail.com?subject=Haircut Inquiry">
+              <a href="mailto:waine.bryan@gmail.com?subject=Haircut Booking">
                 waine.bryan@gmail.com
               </a>
             </div>

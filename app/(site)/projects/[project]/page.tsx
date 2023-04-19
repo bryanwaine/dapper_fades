@@ -20,7 +20,7 @@ export default async function Project({ params }: Props) {
           {project.name}
         </span>
       </h1>
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
+      {/* <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
         <Image
           src={project.image}
           alt={project.alt}
@@ -31,7 +31,28 @@ export default async function Project({ params }: Props) {
               <div>
                   <PortableText value={project.content} />
               </div>
-      </div>
+      </div> */}
+      <div
+          className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          id="#services"
+        >
+          <div className="relative flex flex-col items-center justify-start px-3 pt-3 pb-10">
+            {project.image && (
+              <Image
+                src={project.image}
+                alt={project.alt}
+                width={350}
+                height={50}
+                className="object-cover rounded-2xl shadow-[0px_0px_20px_10px_#cbd5e0]"
+              />
+            )}
+            <div className="absolute bottom-0 flex flex-col justify-center items-center borderborder-black rounded-2xl bg-white bg-opacity-70 backdrop-blur-sm w-46 h-24 px-2">
+              <div className="flex justify-center items-center text-center font-bold py-3 border-none hover:border-none">
+                <PortableText value={project.content} />
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   );
 }
