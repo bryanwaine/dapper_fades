@@ -26,7 +26,7 @@ export default async function Project({ params }: Props) {
           alt={project.alt}
           width={350}
           height={50}
-          className="object-cover rounded-lg border border-gray-500 shadow-[0px_0px_20px_10px_#cbd5e0]"
+          className="object-cover rounded-2xl shadow-[0px_0px_20px_10px_#cbd5e0]"
               />
               <div>
                   <PortableText value={project.content} />
