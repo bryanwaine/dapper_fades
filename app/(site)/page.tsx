@@ -23,7 +23,6 @@ export default async function Home() {
 
         <div
           className="w-full sm:w-1/2 lg:w-1/3 mt-10 flex flex-col justify-center items-center bg-stone-300 p-10 border-2 rounded-3xl bg-white bg-opacity-50 backdrop-blur-sm"
-          id="#services"
         >
           <Image
             src={icon}

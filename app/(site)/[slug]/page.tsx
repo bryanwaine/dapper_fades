@@ -56,10 +56,7 @@ export default async function Page({ params }: Props) {
 
       {/* ABOUT PAGE */}
       {page.slug === "about" && (
-        <div
-          className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          id="#services"
-        >
+        <div className="w-full mt-10 flex justify-center items-center">
           <div className="relative flex flex-col items-center justify-start px-3 pt-3 pb-10">
             {page.image && (
               <Image
@@ -81,9 +78,12 @@ export default async function Page({ params }: Props) {
       )}
 
       {/* CONTACT PAGE */}
-      <div className="mt-10 grid grid-cols-1 gap-5">
+      
         {page.slug === "contact" && (
-          <div>
+          <div
+            className="w-full mt-10 flex flex-col justify-center items-center bg-stone-300 p-10 border-2 rounded-3xl bg-white bg-opacity-50 backdrop-blur-sm"
+            id="#services"
+          >
             <div className="w-full flex flex-col justify-center items-center text-center font-bold">
               <PortableText value={page.content} />
             </div>
@@ -125,7 +125,6 @@ export default async function Page({ params }: Props) {
             </div>
           </div>
         )}
-      </div>
     </div>
   );
 }

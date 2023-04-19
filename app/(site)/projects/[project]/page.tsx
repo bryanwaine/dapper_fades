@@ -20,20 +20,9 @@ export default async function Project({ params }: Props) {
           {project.name}
         </span>
       </h1>
-      {/* <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
-        <Image
-          src={project.image}
-          alt={project.alt}
-          width={350}
-          height={50}
-          className="object-cover rounded-2xl shadow-[0px_0px_20px_10px_#cbd5e0]"
-              />
-              <div>
-                  <PortableText value={project.content} />
-              </div>
-      </div> */}
+      
       <div
-          className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="mt-10 flex justify-center items-center"
           id="#services"
         >
           <div className="relative flex flex-col items-center justify-start px-3 pt-3 pb-10">
