@@ -81,7 +81,7 @@ export default async function Page({ params }: Props) {
       )}
 
       {/* OTHER PAGES */}
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="mt-10 grid grid-cols-1 gap-5">
         {page.slug === "contact" && (
           <div>
             <div className="w-full flex flex-col justify-center items-center mb-10">
