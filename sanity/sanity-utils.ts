@@ -13,6 +13,7 @@ export async function getProjects(): Promise<Project[]> {
             'image': image.asset->url,
             alt,
             price,
+            duration,
             content,
         }`
   );
@@ -28,6 +29,7 @@ export async function getProject(slug: string): Promise<Project> {
             'image': image.asset->url,
             alt,
             price,
+            duration,
             content,
         }`,
     {
