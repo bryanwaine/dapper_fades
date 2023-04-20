@@ -44,9 +44,12 @@ export default async function Page({ params }: Props) {
                   className="object-cover rounded-2xl shadow-[0px_0px_20px_10px_#cbd5e0]"
                 />
               )}
-              <div className="absolute bottom-0 flex justify-center items-center borderborder-black rounded-2xl bg-white bg-opacity-70 backdrop-blur-sm w-36 h-24 px-2">
+              <div className="absolute bottom-0 flex flex-col justify-center items-center borderborder-black rounded-2xl bg-white bg-opacity-70 backdrop-blur-sm w-36 h-24 px-2">
                 <div className="flex justify-center items-center text-center font-extrabold py-3 border-none bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent hover:border-none">
                   {project.name}
+                </div>
+                <div>
+                  &pound;{project.price}
                 </div>
               </div>
             </Link>
