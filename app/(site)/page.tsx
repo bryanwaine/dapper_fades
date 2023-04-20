@@ -41,7 +41,7 @@ export default async function Home() {
                 <div className="font-extrabold py-3 border-none bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent">
                   {project.name}
                 </div>
-                <div className="font-extrabold py-3">&pound;{project.price}</div>
+                <div className="py-3">&pound;{project.price}</div>
               </div>
             </Link>
           ))}
