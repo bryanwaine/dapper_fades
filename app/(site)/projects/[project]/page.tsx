@@ -15,7 +15,7 @@ export default async function Project({ params }: Props) {
 
   return (
     <div className="max-w-5xl mx-auto px-10">
-      <div className="h-64 w-full flex items-end pb-3 text-orange-600">
+      <div className="h-64 w-full flex items-end pb-7 text-orange-600">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
