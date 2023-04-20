@@ -14,7 +14,7 @@ export default async function Page({ params }: Props) {
   const projects = await getProjects();
 
   return (
-    <div className="max-w-5xl mx-auto px-10 pb-10">
+    <div className="flex flex-col justify-center items-center max-w-5xl mx-auto px-10 pb-10">
       <div className="h-56"></div>
 
       <h1 className="w-full flex justify-center items-center font-bold text-gray-700 text-3xl">
@@ -74,7 +74,7 @@ export default async function Page({ params }: Props) {
               <div className="flex justify-center items-center text-center font-extrabold py-3 border-none bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent hover:border-none">
                 <PortableText value={page.content} />
               </div>
-              <p className="font-bold">Barber</p>
+              <p className="">Barber</p>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default async function Page({ params }: Props) {
       
         {page.slug === "contact" && (
           <div
-            className="w-full mt-10 flex flex-col justify-center items-center bg-stone-300 p-10 border-2 rounded-3xl bg-white bg-opacity-50 backdrop-blur-sm"
+            className="w-full md:w-3/5 mt-10 flex flex-col justify-center items-center bg-stone-300 p-10 border-2 rounded-3xl bg-white bg-opacity-50 backdrop-blur-sm"
             id="#services"
           >
             <div className="w-full flex flex-col justify-center items-center text-center font-bold">
