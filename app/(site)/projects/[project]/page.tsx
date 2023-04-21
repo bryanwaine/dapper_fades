@@ -12,6 +12,7 @@ type Props = {
 export default async function Project({ params }: Props) {
   const slug = params.project;
   const project = await getProject(slug);
+  const haircut = project.name.toLowerCase
 
   return (
     <div className="max-w-5xl mx-auto px-10">
@@ -73,7 +74,7 @@ export default async function Project({ params }: Props) {
             <div className="flex justify-center items-center text-center py-2 mb-5 border-none hover:border-none">
               &pound;{project.price}
             </div>
-            <Link href={`sms:+447879144739?&body=Hi%20there%2E%20I%27d%20like%20to%20book%20a%20clean%20${project.name}%20haircut%20appointment%2E%20When%20are%20you%20available%3F`} className="bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-lg p-3">
+            <Link href={`sms:+447879144739?&body=Hi%20there%2E%20I%27d%20like%20to%20book%20a%20clean%20${haircut}%20haircut%20appointment%2E%20When%20are%20you%20available%3F`} className="bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-lg p-3">
               Book Appointment
             </Link>
           </div>
