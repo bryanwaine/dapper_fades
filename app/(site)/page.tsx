@@ -15,15 +15,19 @@ export default async function Home() {
       </div>
 
       <div className=" p-10 flex flex-col items-center w-full">
+        <Link
+          href={`/services`}
+          className="bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-lg p-3 mb-15"
+        >
+          Book Appointment
+        </Link>
         <h2 className="mt-10">
           <span className=" text-3xl font-bold bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent ">
             Services
           </span>
         </h2>
 
-        <div
-          className="w-full sm:w-1/2 lg:w-1/3 mt-10 flex flex-col justify-center items-center bg-stone-300 p-10 border-2 rounded-3xl bg-white bg-opacity-50 backdrop-blur-sm shadow-[0px_0px_20px_10px_#cbd5e0]"
-        >
+        <div className="w-full sm:w-1/2 lg:w-1/3 mt-10 flex flex-col justify-center items-center bg-stone-300 p-10 border-2 rounded-3xl bg-white bg-opacity-50 backdrop-blur-sm shadow-[0px_0px_20px_10px_#cbd5e0]">
           <Image
             src={icon}
             alt="icon"
