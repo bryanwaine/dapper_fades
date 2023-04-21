@@ -3,6 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import icon from "../../public/icon.png";
 
+export const metadata = {
+  title:`Dapper Fades - Home`,
+  description: "Mens Hair Styling Services",
+};
+
 export default async function Home() {
   const projects = await getProjects();
 

@@ -7,7 +7,7 @@ import { getPages } from "@/sanity/sanity-utils";
 import { CurrentPageProvider } from "./currentPageProvider";
 
 export const metadata = {
-  title: "Dapper Fades",
+  title:`Dapper Fades`,
   description: "Mens Hair Styling Services",
 };
 
