@@ -129,7 +129,7 @@ export default async function Page({ params }: Props) {
               </svg>
             </div>
             <a href="sms:+447879144739?&body=Hi%20there%2E%20I%27d%20like%20to%20book%20a%20haircut%20appointment%2E">
-              +447879144739
+              +44&nbsp;7879&nbsp;Contact
             </a>
           </div>
         </div>
