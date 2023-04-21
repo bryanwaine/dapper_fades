@@ -1,10 +1,16 @@
-import Image from "next/image";
+import { Poppins } from 'next/font/google'
 import "../globals.css";
+import Image from "next/image";
 import logo from "../../public/Dapper_Fades.png";
 import Link from "next/link";
 import clsx from "clsx";
 import { getPages } from "@/sanity/sanity-utils";
 import { CurrentPageProvider } from "./currentPageProvider";
+
+const poppins = Poppins({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+})
 
 export const metadata = {
   title:`Dapper Fades`,
@@ -19,7 +25,7 @@ export default async function RootLayout({
   const pages = await getPages();
 
   return (
-    <html lang="en">
+    <html lang="en" className={poppins.className}>
       <body
         className="bg-cover bg-fixed bg-center bg-no-repeat"
         style={{
@@ -44,7 +50,7 @@ export default async function RootLayout({
                 <CurrentPageProvider key={page._id} href={`/${page.slug}`}>
                   <Link
                     href={`/${page.slug}`}
-                    className="flex font-bold text-l text-black"
+                    className="flex text-l text-black"
                   >
                     {page.title}
                     <p
