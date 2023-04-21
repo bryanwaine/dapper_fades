@@ -56,7 +56,7 @@ export default async function RootLayout({
                     <p
                       className={clsx(
                         "text-transparent",
-                        "group-[.active-page]:text-orange-600"
+                        "group-[.active-page]:text-orange-600 font-bold"
                       )}
                     >
                       *
@@ -72,7 +72,7 @@ export default async function RootLayout({
               <CurrentPageProvider key={page._id} href={`/${page.slug}`}>
                 <Link
                   href={`/${page.slug}`}
-                  className="flex font-bold text-xl text-black m-5"
+                  className="flex text-xl text-black m-5"
                 >
                   {page.title}
                   <p
