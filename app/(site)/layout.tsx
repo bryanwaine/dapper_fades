@@ -78,7 +78,7 @@ export default async function RootLayout({
                   <p
                     className={clsx(
                       "text-transparent",
-                      "group-[.active-page]:text-orange-600"
+                      "group-[.active-page]:text-orange-600 font-bold"
                     )}
                   >
                     *
