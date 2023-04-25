@@ -83,7 +83,7 @@ export default async function Project({ params }: Props) {
               &pound;{project.price}
             </div>
             <Link
-              href={`sms:+447879144739?&body=Hi%20there%2E%20I%27d%20like%20to%20book%20a%20clean%20${project.name}%20haircut%20appointment%2E%20When%20are%20you%20available%3F`}
+              href={`sms:+447879144739?&body=Hi%20there%2E%20I%27d%20like%20to%20book%20an%20appointment%20for%20a%20clean%20${project.name}%20haircut%2E%20When%20are%20you%20available%3F`}
               className="bg-orange-600 hover:bg-orange-700 text-white rounded-lg p-3"
             >
               Book Appointment
