@@ -48,7 +48,7 @@ export default async function Home() {
             >
               <div className=" w-full flex justify-between items-center">
                 <div className="font-extrabold py-3 border-none bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent">
-                  {project.name}
+                  {project.name.charAt(0).toUpperCase()}
                 </div>
                 <div className="py-3">&pound;{project.price}</div>
               </div>
