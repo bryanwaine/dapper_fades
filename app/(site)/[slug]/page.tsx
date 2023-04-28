@@ -54,7 +54,7 @@ export default async function Page({ params }: Props) {
               )}
               <div className="absolute bottom-0 flex flex-col justify-center items-center borderborder-black rounded-2xl bg-white bg-opacity-70 backdrop-blur-sm w-36 h-24 px-2">
                 <div className="flex justify-center items-center text-center font-extrabold py-3 border-none bg-gradient-to-r from-gray-900 via-stone-600 to-orange-600 bg-clip-text text-transparent hover:border-none">
-                  {project.name.charAt(0).toUpperCase()}
+                  {project.name.charAt(0).toUpperCase() + project.name.slice(1)}
                 </div>
                 <div>&pound;{project.price}</div>
               </div>

@@ -44,7 +44,7 @@ export default async function Project({ params }: Props) {
       </div>
       <h1 className="w-full flex justify-center items-center font-bold text-gray-700 text-3xl">
         <span className="bg-gradient-to-r from-gray-800 via-stone-600 to-orange-600 bg-clip-text text-transparent">
-          {project.name.charAt(0).toUpperCase()}
+          {project.name.charAt(0).toUpperCase() + project.name.slice(1)}
         </span>
       </h1>
 
