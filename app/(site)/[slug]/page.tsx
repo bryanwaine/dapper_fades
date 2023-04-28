@@ -87,7 +87,6 @@ export default async function Page({ params }: Props) {
       )}
 
       {/* CONTACT PAGE */}
-
       {page.slug === "contact" && (
         <div
           className="w-full md:w-3/5 mt-10 flex flex-col justify-center items-center bg-stone-300 p-10 border-2 rounded-3xl bg-white bg-opacity-50 backdrop-blur-sm"
