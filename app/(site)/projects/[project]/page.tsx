@@ -84,7 +84,7 @@ export default async function Project({ params }: Props) {
             </div>
             <Link
               href={`sms:+447879144739?&body=Hi%20there%2E%20I%27d%20like%20to%20book%20an%20appointment%20for%20a%20clean%20${project.name}%20haircut%2E%20When%20are%20you%20available%3F`}
-              className="bg-orange-600 hover:bg-orange-700 text-white rounded-lg p-3"
+              className="bg-orange-600 hover:bg-orange-700 text-white rounded-lg p-3 shadow-[0px_0px_20px_10px_#cbd5e0]"
             >
               Book Appointment
             </Link>

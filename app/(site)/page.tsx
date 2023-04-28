@@ -22,7 +22,7 @@ export default async function Home() {
       <div className=" p-10 flex flex-col items-center w-full">
         <Link
           href={`/services`}
-          className="bg-orange-600 hover:bg-orange-700 text-white rounded-lg p-3 mb-15"
+          className="bg-orange-600 hover:bg-orange-700 text-white rounded-lg p-3 mb-15 shadow-[0px_0px_20px_10px_#cbd5e0]"
         >
           Book Appointment
         </Link>
