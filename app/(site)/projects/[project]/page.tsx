@@ -24,6 +24,7 @@ export default async function Project({ params }: Props) {
 
   return (
     <div className="max-w-5xl mx-auto px-10">
+      
       <div className="h-64 w-full flex items-end pb-7 text-orange-600">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -39,9 +40,9 @@ export default async function Project({ params }: Props) {
             d="M15.75 19.5L8.25 12l7.5-7.5"
           />
         </svg>
-
         <Link href={`/services`}>Back</Link>
       </div>
+
       <h1 className="w-full flex justify-center items-center font-bold text-gray-700 text-3xl">
         <span className="bg-gradient-to-r from-gray-800 via-stone-600 to-orange-600 bg-clip-text text-transparent">
           {project.name.charAt(0).toUpperCase() + project.name.slice(1)}
