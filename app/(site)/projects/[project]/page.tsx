@@ -10,6 +10,7 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props) {
+  
   const slug = params.project;
   const project = await getProject(slug);
   return {
